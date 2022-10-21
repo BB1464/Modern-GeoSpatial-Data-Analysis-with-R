@@ -7,11 +7,10 @@
 
 Creating maps with R is an efficient and reproducible way of communicating insight to stakeholders. This workshop would expose participant to the modern workflow in geospatial analysis with R. An explosion of packages for working with spatial data, means you can ditch your GIS software and do geospatial analysis in R end-to-end in a more reproducible way. This workshop would expose participant on how to read, manipulate and visualize spatial data in R and participant in this workshop would be exposed to functionality that would course them to say ‘’I didn’t  know you could do that in R!.
 
-## Is this talk for me?
 
 **Learning objectives**:
 
-  - How spatial data can be integrated into data science workflows, how to manipulate, and make sense of spatial data.
+- How spatial data can be integrated into data science workflows, how to manipulate, and make sense of spatial data.
 
 - Participant would learn key strategies for getting spatial data into R
 
@@ -39,6 +38,6 @@ Participant that would attend this workshop do not need to have any previous kno
 
 **Oluwafemi Oyedele** holds a master Degree in Agrometeorology from the University of Ibadan, Nigeria, and he is currently a research fellow at the International Institute of Tropical Agriculture and he is a data enthusiast.
 
-The slides can be found [**here**](link url)
+The slides can be found [**here**](https://github.com/BB1464/Modern-GeoSpatial-Data-Analysis-with-R)
 
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
