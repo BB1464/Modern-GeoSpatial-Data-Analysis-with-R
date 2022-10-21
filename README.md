@@ -38,6 +38,6 @@ Participant that would attend this workshop do not need to have any previous kno
 
 **Oluwafemi Oyedele** holds a master Degree in Agrometeorology from the University of Ibadan, Nigeria, and he is currently a research fellow at the International Institute of Tropical Agriculture and he is a data enthusiast.
 
-The slides can be found [**here**](https://github.com/BB1464/Modern-GeoSpatial-Data-Analysis-with-R)
+The slides can be found [**here**](https://bb1464.github.io/Modern-GeoSpatial-Data-Analysis-with-R/)
 
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
