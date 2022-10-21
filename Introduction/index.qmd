@@ -1,0 +1,264 @@
+---
+title: "Modern GeoSpatial Data Analysis in R"
+author: "Oluwafemi Oyedele"
+subtitle: "Research Fellow, \nInternational Institute of Tropical Agriculture (IITA)"
+footer:  "[GeoSpatial Data Analysis in R](https://github.com/BB1464/CascardiaRConf2022)"
+logo: "img/cascadia_2022.png"
+format: 
+   revealjs: 
+    theme: [solarized, slides.scss]
+    highlight-style: a11y
+    transition: fade
+    slide-number: true
+    chalkboard: true
+editor: visual
+execute:
+  freeze: auto
+---
+
+**About me**
+
+::: columns
+::: {.column width="60%"}
+- I am a Agrometeorologist and Crop Simulation modeler
+
+- I am a member of R4DS online learning community
+
+- I am also a active member of the TidyTuesday project
+
+- `r fontawesome::fa("linkedin")`: [Oluwafemi Oyedele](https://www.linkedin.com/in/oluwafemioyedele)
+
+- `r fontawesome::fa("twitter")`: [@OluwafemOyedele](https://twitter.com/OluwafemOyedele) `r emoji::emoji("thumbsup")`
+
+- `r fontawesome::fa("github")` [github.com/BB1464](https://github.com/BB1464/BB1464)
+:::
+
+
+::: {.column width="40%"}
+![](img/pix.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Maria Tackett" width="300"}
+:::
+:::
+
+::: notes
+- A little bit about myself
+:::
+
+##
+
+#### Workshop agenda
+
+- Intro (this section)
+
+- Getting to know vector data in R
+
+- Getting to know raster data in R
+
+- Getting your spatial data into R
+
+- Coordinate reference systems (CRS)
+
+- Mapping your spatial data
+
+##
+
+### What is Spatial Data ?
+
+- Technically **spatial** can refer to non-earth based positions and geographic/geospatial is a subset
+
+- Spatial Data refers to geographic data in Space.
+
+##
+
+### Point
+
+```{r}
+
+plot(x = 1, y = 1,
+
+ylab = "", xlab ="",
+
+main = "Point")
+
+```
+
+##
+
+### Line
+
+```{r}
+
+plot(x = c(1, 2, 3), y = c(1, 4, 2),
+
+ylab = "", xlab ="",
+
+main = "Line", type = "l")
+
+```
+
+##
+
+### Polygon
+
+```{r}
+
+plot(x = c(1, 2, 4, 3, 1), y = c(2, 4, 3, 1, 2),
+
+ylab = "", xlab ="",
+
+main = "Polygon", type = "l")
+
+```
+
+##
+
+#### Vector data also can have non-spatial variables
+
+- Points, lines and polygons can have associated, non spatial data
+
+- In the example below the non-spatial variables of coastline10 **dataset** are **featurecla**, **scalerank**, **min_zoom**.
+
+```{r,echo=FALSE,warning=FALSE,message=FALSE}
+
+library(rnaturalearthhires)
+
+library(tidyverse)
+
+```
+
+```{r}
+
+data(coastline10)
+
+coastline10 <- coastline10 %>%
+
+sf::st_as_sf()%>%
+
+select(1,2,3,geometry)
+
+glimpse(coastline10)
+
+```
+
+##
+
+##### Vector data comes in a variety of different file formats
+
+- Shapefiles
+
+- Geopackages
+
+- GeoJSON
+
+##
+
+#### Raster data comes in a variety of differnt file formats
+
+- IMG
+
+- TIF
+
+- SID
+
+##
+
+### Most spatial processing and visualization can be done with these packages
+
+- {sf}
+
+- {raster}
+
+- {tmap} or {ggplot2}
+
+- {mapview} or {leaflet}
+
+##
+
+### {sf}
+
+A package for vector data
+
+##
+
+### {raster}
+
+#### For working with raster data (obviously!)
+
+##
+
+### {tmap}
+
+#### For creating static (and interactive!) maps
+
+##
+
+### {mapview}
+
+For creating interactive maps
+
+##
+
+### Additional Packages for GeoSpatial Analysis
+
+- {ggspatial}
+
+- {leaflet}
+
+- {ggmap}
+
+- {tidycensus}
+
+- {rayshader}
+
+- {rgrass7}
+
+- {stars}
+
+- {geogrid}
+
+##
+
+## Many of these packages (including {sf}) have non-R dependencies
+
+##
+
+### Getting Geospatial Data Into R
+
+#### Ways to get spatial data into R
+
+- Load external spatial files
+
+- Load or fetch data with specialized R packages
+
+##
+
+### What function you use depends on the type of data
+
+- Read vector data with the {sf} package
+
+- Read raster data with the {raster} package
+
+##
+
+### For vector data use **read_sf()** from **{sf}**
+
+##
+
+### You can also use st_read() from {sf} but read_sf() is more "tidy"
+
+- stringsAsFactors = FALSE
+
+- quiet = TRUE
+
+- as_tibble = TRUE
+
+##
+
+### read_sf() to read many different file format
+
+- Shapefiles
+
+- Geopackages
+
+- Geojson
+
+- Even databases!
