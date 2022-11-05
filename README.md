@@ -51,8 +51,9 @@ install.packages(my_packages, repos = "http://cran.rstudio.com")
 <h1 align="center"> NHS_R Conference, 2022!!! </h1>
   
   <p align="center">
-    <img src="https://github.com/BB1464/Office-Hour/blob/master/Plot/NHSR.jp" width="60%">
+    <img src="https://github.com/BB1464/Office-Hour/blob/master/Plot/NHSR.jpg" width="60%">
       </p>
-      
+
+
 
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
