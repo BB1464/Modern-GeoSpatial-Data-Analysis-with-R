@@ -1,6 +1,6 @@
 # Modern GeoSpatial Data Analysis with R
 
-## Oluwafemi Oyedele\| NHS-R:Conf(2022)
+## Oluwafemi Oyedele| NHS-R:Conf(2022)
 
 ## Overview
 
@@ -35,5 +35,24 @@ Participant that would attend this workshop do not need to have any previous kno
 **Oluwafemi Oyedele** holds a master Degree in Agrometeorology from the University of Ibadan, Nigeria, and he is currently a research fellow at the International Institute of Tropical Agriculture and he is a data enthusiast.
 
 The slides can be found [**here**](https://bb1464.github.io/Modern-GeoSpatial-Data-Analysis-with-R/)
+
+## Packages 
+my_packages <- c("tidyverse","grid",
+                 "httr","giscoR","ggmap",
+                 "spdep","sf","CoordinateCleaner",
+                 "gridExtra","classInt","raster","exactextractr","gganimate","transformr","gifski","rfigshare","jsonlite","leaflet","mapview")
+
+install.packages(my_packages, repos = "http://cran.rstudio.com")
+
+
+
+## Day1: Point
+
+<h1 align="center"> NHS_R Conference, 2022!!! </h1>
+  
+  <p align="center">
+    <img src="https://github.com/BB1464/Office-Hour/blob/master/Plot/NHSR.jp" width="60%">
+      </p>
+      
 
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
