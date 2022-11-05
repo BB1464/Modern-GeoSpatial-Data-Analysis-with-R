@@ -46,8 +46,6 @@ install.packages(my_packages, repos = "http://cran.rstudio.com")
 
 
 
-## Day1: Point
-
 <h1 align="center"> NHS_R Conference, 2022!!! </h1>
   
   <p align="center">
