@@ -3,7 +3,7 @@ title: "Modern GeoSpatial Data Analysis in R"
 author: "Oluwafemi Oyedele"
 subtitle: "Research Fellow, \nInternational Institute of Tropical Agriculture (IITA)"
 footer:  "[GeoSpatial Data Analysis in R](https://github.com/BB1464/CascardiaRConf2022)"
-logo: "img/NHSR.jpg"
+logo: "img/image003.png"
 format: 
    revealjs: 
     theme: [solarized, slides.scss]
