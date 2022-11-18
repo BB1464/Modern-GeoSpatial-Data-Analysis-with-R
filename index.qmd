@@ -3,7 +3,7 @@ title: "Modern GeoSpatial Data Analysis in R"
 author: "Oluwafemi Oyedele"
 subtitle: "Research Fellow, \nInternational Institute of Tropical Agriculture (IITA)"
 footer:  "[GeoSpatial Data Analysis in R](https://github.com/BB1464/CascardiaRConf2022)"
-logo: "img/cascadia_2022.png"
+logo: "img/NHSR.jpg"
 format: 
    revealjs: 
     theme: [solarized, slides.scss]
@@ -20,7 +20,6 @@ execute:
 
 ::: columns
 ::: {.column width="60%"}
-
 -   I am a Agrometeorologist and Crop Simulation modeler
 
 -   I am a member of R4DS online learning community
@@ -29,7 +28,7 @@ execute:
 
 -   `r fontawesome::fa("linkedin")`: [Oluwafemi Oyedele](https://www.linkedin.com/in/oluwafemioyedele)
 
--   `r fontawesome::fa("twitter")`: [@OluwafemOyedele](https://twitter.com/OluwafemOyedele) `r emoji::emoji("thumbsup")`
+-   `r fontawesome::fa("twitter")`: [\@OluwafemOyedele](https://twitter.com/OluwafemOyedele) `r emoji::emoji("thumbsup")`
 
 -   `r fontawesome::fa("github")` [github.com/BB1464](https://github.com/BB1464/BB1464)
 :::
@@ -181,19 +180,19 @@ A package for vector data
 
 ### {raster}
 
-#### For working with raster data (obviously!)
+-   For working with raster data (obviously!)
 
 ## 
 
 ### {tmap}
 
-#### For creating static (and interactive!) maps
+-   For creating static (and interactive!) maps
 
 ## 
 
 ### {mapview}
 
-For creating interactive maps
+-   For creating interactive maps
 
 ## 
 
@@ -217,13 +216,9 @@ For creating interactive maps
 
 ## 
 
-## Many of these packages (including {sf}) have non-R dependencies
-
-## 
-
 ### Getting Geospatial Data Into R
 
-#### Ways to get spatial data into R
+Ways to get spatial data into R
 
 -   Load external spatial files
 
@@ -239,11 +234,9 @@ For creating interactive maps
 
 ## 
 
-### For vector data use **read_sf()** from **{sf}**
+-   For vector data use **read_sf()** from **{sf}**
 
-## 
-
-### You can also use st_read() from {sf} but read_sf() is more "tidy"
+-   We can also use st_read() from {sf} but read_sf() is more "tidy"
 
 -   stringsAsFactors = FALSE
 
@@ -253,7 +246,7 @@ For creating interactive maps
 
 ## 
 
-### read_sf() to read many different file format
+**read_sf()** to read many different file format
 
 -   Shapefiles
 
@@ -262,3 +255,31 @@ For creating interactive maps
 -   Geojson
 
 -   Even databases!
+
+## 
+
+**Coordinate reference system**
+
+-   Every location on earth is specified by a longitude and latitude.
+
+-   The Coordinate Reference system (CRS) determines how the data will be projected onto a map.
+
+## 
+
+![](img/map_projections.gif) [Projection Transitions](https://bl.ocks.org/mbostock/raw/3711652/) by Mick Bostock
+
+## 
+
+-   We can check the CRS using `st_crs`:
+
+-   The CRS is specified in the attributes `epsg` and `proj4string`
+
+-   We can transform a coordinate reference system using the `st_transform()`.
+
+## 
+
+-   We can View all the CRS with this function `View(rgdal::make_EPSG())`
+
+```{r,echo=TRUE,warning=FALSE,message=FALSE}
+head(rgdal::make_EPSG())
+```

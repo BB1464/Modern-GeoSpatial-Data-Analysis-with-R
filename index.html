@@ -17,6 +17,69 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
   <script src="index_files/libs/clipboard/clipboard.min.js"></script>
@@ -338,7 +401,7 @@
 <li><p>I am a member of R4DS online learning community</p></li>
 <li><p>I am also a active member of the TidyTuesday project</p></li>
 <li><p><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>: <a href="https://www.linkedin.com/in/oluwafemioyedele">Oluwafemi Oyedele</a></p></li>
-<li><p><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg>: <a href="https://twitter.com/OluwafemOyedele"><span class="citation" data-cites="OluwafemOyedele">@OluwafemOyedele</span></a> 👍</p></li>
+<li><p><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg>: <a href="https://twitter.com/OluwafemOyedele">@OluwafemOyedele</a> 👍</p></li>
 <li><p><svg aria-hidden="true" role="img" viewbox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg> <a href="https://github.com/BB1464/BB1464">github.com/BB1464</a></p></li>
 </ul>
 </div><div class="column" style="width:40%;">
@@ -453,17 +516,23 @@ $ geometry   &lt;LINESTRING [°]&gt; LINESTRING (59.91603 -67.40..., LINESTRING 
 <section id="section-10" class="slide level2">
 <h2></h2>
 <h3 id="raster">{raster}</h3>
-<h4 id="for-working-with-raster-data-obviously">For working with raster data (obviously!)</h4>
+<ul>
+<li>For working with raster data (obviously!)</li>
+</ul>
 </section>
 <section id="section-11" class="slide level2">
 <h2></h2>
 <h3 id="tmap">{tmap}</h3>
-<h4 id="for-creating-static-and-interactive-maps">For creating static (and interactive!) maps</h4>
+<ul>
+<li>For creating static (and interactive!) maps</li>
+</ul>
 </section>
 <section id="section-12" class="slide level2">
 <h2></h2>
 <h3 id="mapview">{mapview}</h3>
-<p>For creating interactive maps</p>
+<ul>
+<li>For creating interactive maps</li>
+</ul>
 </section>
 <section id="section-13" class="slide level2">
 <h2></h2>
@@ -481,20 +550,14 @@ $ geometry   &lt;LINESTRING [°]&gt; LINESTRING (59.91603 -67.40..., LINESTRING 
 </section>
 <section id="section-14" class="slide level2">
 <h2></h2>
-</section>
-<section id="many-of-these-packages-including-sf-have-non-r-dependencies" class="slide level2">
-<h2>Many of these packages (including {sf}) have non-R dependencies</h2>
-</section>
-<section id="section-15" class="slide level2">
-<h2></h2>
 <h3 id="getting-geospatial-data-into-r">Getting Geospatial Data Into R</h3>
-<h4 id="ways-to-get-spatial-data-into-r">Ways to get spatial data into R</h4>
+<p>Ways to get spatial data into R</p>
 <ul>
 <li><p>Load external spatial files</p></li>
 <li><p>Load or fetch data with specialized R packages</p></li>
 </ul>
 </section>
-<section id="section-16" class="slide level2">
+<section id="section-15" class="slide level2">
 <h2></h2>
 <h3 id="what-function-you-use-depends-on-the-type-of-data">What function you use depends on the type of data</h3>
 <ul>
@@ -502,30 +565,65 @@ $ geometry   &lt;LINESTRING [°]&gt; LINESTRING (59.91603 -67.40..., LINESTRING 
 <li><p>Read raster data with the {raster} package</p></li>
 </ul>
 </section>
-<section id="section-17" class="slide level2">
+<section id="section-16" class="slide level2">
 <h2></h2>
-<h3 id="for-vector-data-use-read_sf-from-sf">For vector data use <strong>read_sf()</strong> from <strong>{sf}</strong></h3>
-</section>
-<section id="section-18" class="slide level2">
-<h2></h2>
-<h3 id="you-can-also-use-st_read-from-sf-but-read_sf-is-more-tidy">You can also use st_read() from {sf} but read_sf() is more “tidy”</h3>
 <ul>
+<li><p>For vector data use <strong>read_sf()</strong> from <strong>{sf}</strong></p></li>
+<li><p>We can also use st_read() from {sf} but read_sf() is more “tidy”</p></li>
 <li><p>stringsAsFactors = FALSE</p></li>
 <li><p>quiet = TRUE</p></li>
 <li><p>as_tibble = TRUE</p></li>
 </ul>
 </section>
-<section id="section-19" class="slide level2">
+<section id="section-17" class="slide level2">
 <h2></h2>
-<h3 id="read_sf-to-read-many-different-file-format">read_sf() to read many different file format</h3>
+<p><strong>read_sf()</strong> to read many different file format</p>
 <ul>
 <li><p>Shapefiles</p></li>
 <li><p>Geopackages</p></li>
 <li><p>Geojson</p></li>
 <li><p>Even databases!</p></li>
 </ul>
+</section>
+<section id="section-18" class="slide level2">
+<h2></h2>
+<p><strong>Coordinate reference system</strong></p>
+<ul>
+<li><p>Every location on earth is specified by a longitude and latitude.</p></li>
+<li><p>The Coordinate Reference system (CRS) determines how the data will be projected onto a map.</p></li>
+</ul>
+</section>
+<section id="section-19" class="slide level2">
+<h2></h2>
+<p><img data-src="img/map_projections.gif"> <a href="https://bl.ocks.org/mbostock/raw/3711652/">Projection Transitions</a> by Mick Bostock</p>
+</section>
+<section id="section-20" class="slide level2">
+<h2></h2>
+<ul>
+<li><p>We can check the CRS using <code>st_crs</code>:</p></li>
+<li><p>The CRS is specified in the attributes <code>epsg</code> and <code>proj4string</code></p></li>
+<li><p>We can transform a coordinate reference system using the <code>st_transform()</code>.</p></li>
+</ul>
+</section>
+<section id="section-21" class="slide level2">
+<h2></h2>
+<ul>
+<li>We can View all the CRS with this function <code>View(rgdal::make_EPSG())</code></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">head</span>(rgdal<span class="sc">::</span><span class="fu">make_EPSG</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  code   note                                                   prj4 prj_method
+1 3819 HD1909         +proj=longlat +ellps=bessel +no_defs +type=crs     (null)
+2 3821  TWD67        +proj=longlat +ellps=aust_SA +no_defs +type=crs     (null)
+3 3822  TWD97 +proj=geocent +ellps=GRS80 +units=m +no_defs +type=crs     (null)
+4 3823  TWD97          +proj=longlat +ellps=GRS80 +no_defs +type=crs     (null)
+5 3824  TWD97          +proj=longlat +ellps=GRS80 +no_defs +type=crs     (null)
+6 3887   IGRS +proj=geocent +ellps=GRS80 +units=m +no_defs +type=crs     (null)</code></pre>
+</div>
+</div>
 
-<img src="img/cascadia_2022.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<img src="img/NHSR.jpg" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href="https://github.com/BB1464/CascardiaRConf2022">GeoSpatial Data Analysis in R</a></p>
 </div>
 </section>
