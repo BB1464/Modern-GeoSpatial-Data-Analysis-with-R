@@ -1,10 +1,10 @@
 
 
-# Assignment ----------------------------------------------------
+# Exercise 1 ----------------------------------------------------
 
-# Take the Africa population visuals and modify the colour schemes
+# Visualize the map of any country of your choice
 
-# Modify the levels of the colour schemes
+# Modify the color pallete
 
 
 # Add some annotations to the plot
