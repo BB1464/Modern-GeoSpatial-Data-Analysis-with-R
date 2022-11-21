@@ -46,7 +46,7 @@ execute:
 
 #### Workshop agenda
 
--   Intro (this section)
+-   Introduction
 
 -   Getting to know vector data in R
 
