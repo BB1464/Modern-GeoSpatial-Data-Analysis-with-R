@@ -156,11 +156,11 @@ leaflet(data = nc) %>%
           lat = 34.5,
           zoom = 6) %>%
   addPolygons(
-    fillColor = ~pal74(nc$births1974), #<<
-    fillOpacity = 1, #<<
-    color = "blue", #<<
-    opacity = 0.7, #<<
-    weight = 1 #<<
+    fillColor = ~pal74(nc$births1974),
+    fillOpacity = 1,
+    color = "blue",
+    opacity = 0.7,
+    weight = 1
   )
 
 
